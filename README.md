@@ -14,7 +14,7 @@ Published beta client for InvoiceCraftly API `v1`. Current release: `0.1.0`.
 npm install @invoicecraftly/client
 ```
 
-The first npm release was bootstrapped on 8 September 2026. Full release acceptance also includes a clean registry-install smoke and a live PDF example against the real API. See [`RELEASE.md`](./RELEASE.md) for the release and Trusted Publishing process.
+The first npm release was bootstrapped on 8 September 2026. A clean GitHub-hosted smoke subsequently installed `@invoicecraftly/client@0.1.0` from the public npm registry and imported SDK version `0.1.0` successfully. The remaining release-acceptance check is the live PDF example against the real API. See [`RELEASE.md`](./RELEASE.md) for the release and Trusted Publishing process.
 
 ## Requirements
 
