@@ -1,0 +1,54 @@
+{
+  "name": "@invoicecraftly/client",
+  "version": "0.1.0",
+  "description": "Official TypeScript client for the InvoiceCraftly Developer Document API.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "npm test && npm run typecheck && npm run pack:check"
+  },
+  "keywords": [
+    "invoice",
+    "invoicing",
+    "pdf",
+    "invoice-api",
+    "api-client",
+    "typescript"
+  ],
+  "homepage": "https://invoicecraftly.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaidurrehman/invoicecraftly-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abaidurrehman/invoicecraftly-js/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
