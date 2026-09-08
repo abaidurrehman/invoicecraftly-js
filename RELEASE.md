@@ -10,8 +10,11 @@ This repository publishes the official TypeScript client for the InvoiceCraftly 
 - public repository: `abaidurrehman/invoicecraftly-js`
 - API target: InvoiceCraftly API `v1`
 - license: MIT
+- clean registry install for `0.1.0`: verified on 8 September 2026
+- live PDF API smoke for `0.1.0`: still pending
+- npm Trusted Publisher: still pending
 
-The first npm package creation was bootstrapped interactively on 8 September 2026. Future releases should use npm Trusted Publishing from GitHub Actions after the package-level Trusted Publisher relationship is configured.
+The first npm package creation was bootstrapped interactively on 8 September 2026. A clean GitHub-hosted project then installed `@invoicecraftly/client@0.1.0` directly from npm and successfully imported SDK version `0.1.0`. Future releases should use npm Trusted Publishing from GitHub Actions after the package-level Trusted Publisher relationship is configured.
 
 ## First-release bootstrap used for 0.1.0
 
@@ -90,7 +93,9 @@ npm init -y
 npm install @invoicecraftly/client
 ```
 
-Confirm the import resolves from the public registry rather than a local path or link. For release acceptance, also run the README PDF example with a valid test API key and confirm the real API returns a PDF without exposing the credential in logs or committed files.
+Confirm the import resolves from the public registry rather than a local path or link. For `0.1.0`, this install/import check has already passed from GitHub-hosted CI.
+
+For full release acceptance, also run the README PDF example with a valid test API key and confirm the real API returns a PDF without exposing the credential in logs or committed files.
 
 ## Release boundaries
 
