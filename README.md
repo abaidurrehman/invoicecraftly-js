@@ -6,7 +6,7 @@ Use it to generate an invoice PDF, check EN16931-core readiness, or prepare the 
 
 ## Status
 
-Beta client for InvoiceCraftly API `v1`. Current SDK version: `0.1.x`.
+Published beta client for InvoiceCraftly API `v1`. Current release: `0.1.0`.
 
 ## Install
 
@@ -14,7 +14,7 @@ Beta client for InvoiceCraftly API `v1`. Current SDK version: `0.1.x`.
 npm install @invoicecraftly/client
 ```
 
-> The package is not considered released until it is visible on npm and a clean registry install has been smoke-tested.
+The first npm release was bootstrapped on 8 September 2026. Full release acceptance also includes a clean registry-install smoke and a live PDF example against the real API. See [`RELEASE.md`](./RELEASE.md) for the release and Trusted Publishing process.
 
 ## Requirements
 
@@ -159,7 +159,7 @@ The SDK intentionally does not implement invoice totals, VAT rules, route decisi
 ## Development
 
 ```bash
-npm install
+npm ci
 npm test
 npm run typecheck
 npm run pack:check
